@@ -19,6 +19,16 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+        org.springframework.web spring boot
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.1.4.RELEASE</version>
+        </dependency>
+        <!-- // end -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -144,6 +154,19 @@
             <version>2.1</version>
         </dependency>
         <!-- // shopRest End -->
+
+        <!-- spring-boot-starter-web 에 포함된 tomcat 은 JSP 엔진을 포함하고 있지 않습니다. -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
+        <!-- 위와 같이 jasper 와 jstl 을 의존성에 포함시켜줘야 JSP파일의 구동이 가능합니다.
+        출처: https://jsijsi99.tistory.com/10 [삽질대마왕 이대장] -->
 
     </dependencies>
 
