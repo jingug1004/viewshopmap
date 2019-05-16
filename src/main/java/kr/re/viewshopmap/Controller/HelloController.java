@@ -46,7 +46,7 @@ public class HelloController {
 
         model.addAttribute("testStrings", html);
 
-        System.out.println(model);
+//        System.out.println(model);
 //        return "hello";
     }
 

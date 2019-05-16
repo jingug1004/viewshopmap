@@ -13,6 +13,6 @@
 </head>
 <body>
 Hello, Spring Boot App 12345678
-${testStrings}
+<%--${testStrings}--%>
 </body>
 </html>

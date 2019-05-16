@@ -10,7 +10,8 @@
     </parent>
     <groupId>kr.re</groupId>
     <artifactId>viewshopmap</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>01</version>
+    <packaging>war</packaging>
     <name>viewshopmap</name>
     <description>Demo project for Spring Boot</description>
 
