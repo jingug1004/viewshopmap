@@ -10,7 +10,7 @@
     </parent>
     <groupId>kr.re</groupId>
     <artifactId>viewshopmap</artifactId>
-    <version>01</version>
+    <version>02</version>
     <packaging>war</packaging>
     <name>viewshopmap</name>
     <description>Demo project for Spring Boot</description>
@@ -165,6 +165,7 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
+            <scope>provided</scope>
         </dependency>
         <!-- 위와 같이 jasper 와 jstl 을 의존성에 포함시켜줘야 JSP파일의 구동이 가능합니다.
         출처: https://jsijsi99.tistory.com/10 [삽질대마왕 이대장] -->
@@ -176,6 +177,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+<!--                <configuration>-->
+<!--                    <executable>true</executable> &lt;!&ndash; https://jeong-pro.tistory.com/164 &ndash;&gt;-->
+<!--                </configuration>-->
             </plugin>
         </plugins>
     </build>
